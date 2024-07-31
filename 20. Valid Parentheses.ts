@@ -32,6 +32,7 @@ function isValid(s: string): boolean {
   };
 
   for (const char of s) {
+    //   如果是右括號，則判斷 stack 是否為空，或 stack 最後一個值是否等於左括號
     if (char in bracketPairs) {
       if (
         stack.length === 0 ||
@@ -41,8 +42,8 @@ function isValid(s: string): boolean {
       }
       stack.pop();
     } else {
-        stack.push(char)
+      stack.push(char);
     }
   }
-  return stack.length === 0
+  return stack.length === 0;
 }
