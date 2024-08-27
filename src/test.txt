@@ -1,0 +1,7 @@
+            - STEP5. 議匯分配處理確認完成 `finishStockExrateSwap`
+                - 更新預產拋銀行媒體檔 start `SBSSND_A.TXT`, `SBSSND_D.TXT` [usa_io_trans]
+                    - STEP1. 產生抛銀行媒體檔資料 (from io_trans) 股息 (付客戶) : 逐筆出款 dividendData
+                    - STEP2. 特殊欄位轉換
+                    - STEP3. 寫入資料庫 insertBankMediaData [usa_pre_trans_media] (跳錯誤)
+                    - STEP4. 取得拋檔資料
+                    - STEP5. 抛檔結果監控
